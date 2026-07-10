@@ -1,6 +1,6 @@
 # Inception
 
-A fully containerized web infrastructure built from scratch using Docker and Docker Compose, developed as part of the [42](https://42.fr) system administration curriculum.
+A fully containerized web infrastructure built from scratch using Docker and Docker Compose, as a hands-on deep dive into container orchestration, reverse proxying, and service isolation.
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
@@ -48,8 +48,8 @@ The stack runs three services, each in its own container built on `debian:bookwo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aveizaj03/inception.git
-   cd inception
+   git clone git@github.com:adrianov03/Inception.git
+   cd Inception
    ```
 
 2. Create the secrets files:
@@ -61,16 +61,16 @@ The stack runs three services, each in its own container built on `debian:bookwo
 
 3. Create `srcs/.env`:
    ```
-   DOMAIN_NAME=yourusername.42.fr
+   DOMAIN_NAME=mysite.local
    MYSQL_DATABASE=wordpress
    MYSQL_USER=wpuser
    MYSQL_PASSWORD=your_db_password
    MYSQL_ROOT_PASSWORD=your_root_password
    WP_TITLE=My Site
    WP_ADMIN_USER=admin
-   WP_ADMIN_EMAIL=admin@yourusername.42.fr
+   WP_ADMIN_EMAIL=admin@mysite.local
    WP_USER=visitor
-   WP_USER_EMAIL=visitor@yourusername.42.fr
+   WP_USER_EMAIL=visitor@mysite.local
    DATA_PATH=/home/youruser/data
    ```
 
