@@ -1,6 +1,8 @@
 LOGIN		?= $(shell whoami)
 DATA_PATH	?= /home/$(LOGIN)/data
-DOMAIN_NAME	?= mysite.local
+
+include srcs/.env
+export
 
 all: setup up
 
