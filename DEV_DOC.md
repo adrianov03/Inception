@@ -19,16 +19,16 @@ After cloning, create these files manually:
 
 **`srcs/.env`**:
 ```
-DOMAIN_NAME=yourusername.42.fr
+DOMAIN_NAME=mysite.local
 MYSQL_DATABASE=wordpress
 MYSQL_USER=wpuser
 MYSQL_PASSWORD=your_password
 MYSQL_ROOT_PASSWORD=your_root_password
 WP_TITLE=My Inception Site
 WP_ADMIN_USER=admin
-WP_ADMIN_EMAIL=admin@yourusername.42.fr
+WP_ADMIN_EMAIL=admin@mysite.local
 WP_USER=visitor
-WP_USER_EMAIL=visitor@yourusername.42.fr
+WP_USER_EMAIL=visitor@mysite.local
 DATA_PATH=/home/youruser/data
 ```
 

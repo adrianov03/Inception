@@ -1,12 +1,13 @@
 LOGIN		?= $(shell whoami)
 DATA_PATH	?= /home/$(LOGIN)/data
+DOMAIN_NAME	?= mysite.local
 
 all: setup up
 
 setup:
 	@mkdir -p $(DATA_PATH)/wordpress
 	@mkdir -p $(DATA_PATH)/mariadb
-	@echo "127.0.0.1 $(LOGIN).42.fr" | sudo tee -a /etc/hosts > /dev/null || true
+	@grep -q "$(DOMAIN_NAME)" /etc/hosts || echo "127.0.0.1 $(DOMAIN_NAME)" | sudo tee -a /etc/hosts > /dev/null
 
 up:
 	@docker-compose -f srcs/docker-compose.yml --env-file srcs/.env up -d --build

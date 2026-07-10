@@ -21,8 +21,8 @@ make stop     # Stop without removing
 
 ## Accessing the website
 
-- **Public site**: `https://yourusername.42.fr`
-- **Admin panel**: `https://yourusername.42.fr/wp-admin`
+- **Public site**: `https://mysite.local`
+- **Admin panel**: `https://mysite.local/wp-admin`
 
 > Accept the browser warning for the self-signed SSL certificate.
 
